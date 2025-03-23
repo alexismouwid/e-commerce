@@ -137,13 +137,13 @@ overflow-y: auto;
     color:  white;
   }
 
-.confirmar-pedido{
+.confirmar-bt{
   background-color: green;
   color: white;
   border: 1px solid green;
   border-radius: 5px;
 }
-.confirmar-pedido:hover{
+.confirmar-bt:hover{
   background-color: darkgreen;
   color: white;
   border: 1px: solid white;
@@ -151,13 +151,13 @@ overflow-y: auto;
 }
 
 
-.confirmar-pedido{
+.confirmar-pd{
   background-color: red;
   color: white;
   border: 1px solid red;
   border-radius: 5px;
 }
-.confirmar-pedido:hover{
+.confirmar-pd:hover{
   background-color: darkred;
   color: white;
   border: 1px: solid white;
@@ -184,13 +184,13 @@ overflow-y: auto;
   }
 }
 
-.confirmar-pedido{
+.confirmar-bt{
   background-color: green;
   color: white;
   border: 1px solid green;
   border-radius: 5px;
 }
-.confirmar-pedido:hover{
+.confirmar-bt:hover{
   background-color: darkgreen;
   color: white;
   border: 1px: solid white;
@@ -198,13 +198,13 @@ overflow-y: auto;
 }
 
 
-.confirmar-pedido{
+.confirmar-pd{
   background-color: red;
   color: white;
   border: 1px solid red;
   border-radius: 5px;
 }
-.confirmar-pedido:hover{
+.confirmar-pd:hover{
   background-color: darkred;
   color: white;
   border: 1px: solid white;

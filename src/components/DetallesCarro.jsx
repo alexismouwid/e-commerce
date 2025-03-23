@@ -148,8 +148,8 @@ const { mostrarFormulario, address, phone} = this.state;
               value={phone}
               onChange={this.handleInputChange}
             />
-            <button  className='confirmar-pedido'onClick={this.hacerPedido}>Confirmar pedido</button>
-            <button className='cancelar-pedido'onClick={this.toggleFormulario}>Cancelar</button>
+            <button  className='confirmar-bt'onClick={this.hacerPedido}>Confirmar pedido</button>
+            <button className='cancelar-pd'onClick={this.toggleFormulario}>Cancelar</button>
           </div>
         )}
       </div>
