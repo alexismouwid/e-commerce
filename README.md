@@ -10,7 +10,7 @@
 
 ### 🔹 **Backend** : https://github.com/alexismouwid/backend-ecommerce  
 - ⚡ **Express**: API para gestionar las peticiones al servidor.  
-- 🗄️ **Mongoose**: Conexión y manejo de la base de datos en MongoDB.  
+- 🗄️ **Mongoose**: Conexión y manejo de la base de datos en MongoDB Atlas  
 - 🔑 **Bcrypt**: Encriptación de contraseñas para mayor seguridad.  
 - 🔐 **Jsonwebtoken (JWT)**: Generación de tokens para autenticación de usuarios.  
 - 🛡️ **Jwt-express**: Middleware de autenticación (sí, ¡ahora sabemos para qué sirve! 😆).  
