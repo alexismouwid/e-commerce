@@ -8,7 +8,7 @@
 
 # 🛠️ Tecnologías  
 
-### 🔹 **Backend**  
+### 🔹 **Backend** : https://github.com/alexismouwid/backend-ecommerce  
 - ⚡ **Express**: API para gestionar las peticiones al servidor.  
 - 🗄️ **Mongoose**: Conexión y manejo de la base de datos en MongoDB.  
 - 🔑 **Bcrypt**: Encriptación de contraseñas para mayor seguridad.  
