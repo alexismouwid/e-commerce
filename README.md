@@ -60,3 +60,8 @@
 **⏳ NO TERMINADO** ☕  
 
  
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> acacd6b (initial commit)

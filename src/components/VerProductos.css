@@ -1,0 +1,19 @@
+.btn-productos{
+ font-size: clamp(14px, 2vw, 24px); /* Tamaño de fuente adaptable */
+  padding: clamp(8px, 1vw, 16px) clamp(12px, 2vw, 24px); /* Espaciado adaptable */
+  width: clamp(100px, 20vw, 300px); /* Ancho dinámico */
+  height: clamp(40px, 5vw, 80px); /* Alto dinámico */
+  border-radius: clamp(5px, 1vw, 15px); /* Bordes redondeados responsivos */
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-productos:hover{
+  background-color: #fff;
+  color: #000000;
+}
+
+
+

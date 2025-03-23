@@ -1,0 +1,86 @@
+
+.formulario-container {
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+   font-size: clamp(12px, 2vw, 20px); /* Tamaño de texto adaptable */
+}
+.login-title {
+  color: white;
+}
+
+.formulario-login{
+
+width: clamp(240px, 50vw, 240px); /* Ancho flexible */
+height: 120px;
+padding: clamp(16px, 3vw, 32px); /* Espaciado adaptable */
+border-radius: clamp(8px, 2vw, 16px); /* Bordes redondeados */
+box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5); /* Sombra verde difuminada */
+background-color: rgba(0, 0, 0, 0.6);
+margin: auto;
+backdrop-filter: blur(5px);
+border:  none;
+position: absolute;
+font-size: 12px;
+}
+
+.input {
+
+ width: 100%; /* Que ocupen todo el ancho del formulario */
+  font-size: clamp(14px, 1.5vw, 20px); /* Tamaño adaptable */
+  padding: clamp(8px, 1vw, 16px);
+border-radius: clamp(5px, 1vw, 10px);
+  border: 2px solid #ccc;
+    margin-bottom: 10px;
+   background-color: #f8f8f8;
+}
+
+
+.botones-container{
+
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.entrar, .salir{
+
+  position: relative;
+  bottom: 10px;
+font-size: clamp(14px, 2vw, 18px); /* Tamaño de fuente adaptable */
+  padding: clamp(8px, 1vw, 16px) clamp(12px, 2vw, 24px); /* Espaciado adaptable */
+  width: clamp(80px, 20vw, 100px); /* Ancho dinámico */
+  height: clamp(30px, 5vw, 40px); /* Alto dinámico */
+  border-radius: clamp(5px, 1vw, 15px); /* Bordes redondeados responsivos */
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.entrar, .salir :hover {
+  color: black;
+  background-color: darkgreen;
+}
+.message{
+  position: relative;
+ bottom: 10px;
+  color: green bold;
+}
+
+
+/* 📱🔹 Modo Movil */
+@media (max-width: 768px)  {
+
+.formulario-register{
+  position: relative;
+  
+  }
+
+
+}
+
+
+
+
