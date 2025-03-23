@@ -19,7 +19,7 @@ class FormularioRegistro extends Component {
     const { nombre, email, password } = this.state;
 
     try {
-      const response = await axios.post("http://localhost:3000/register", {
+      const response = await axios.post("https://backend-ecommerce-taupe.vercel.app/register", {
         nombre,
         email,
         password,

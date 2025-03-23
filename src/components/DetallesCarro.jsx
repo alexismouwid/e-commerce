@@ -54,7 +54,7 @@ class DetallesCarro extends Component {
 
   try {
     // Enviar la solicitud POST con axios
-    const response = await axios.post("http://localhost:3000/orders", payload, {
+    const response = await axios.post("https://backend-ecommerce-taupe.vercel.app/orders", payload, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`, // Enviar el token JWT

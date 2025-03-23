@@ -30,7 +30,7 @@ const obtenerPedidos = async () => {
   const token = localStorage.getItem("token"); // Obtener el token JWT
 
   try {
-    const response = await axios.get("http://localhost:3000/orders/user", {
+    const response = await axios.get("https://backend-ecommerce-taupe.vercel.app/orders/user", {
       headers: {
         Authorization: `Bearer ${token}`, // Enviar el token JWT
       },
