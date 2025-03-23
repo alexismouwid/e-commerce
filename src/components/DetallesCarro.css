@@ -198,13 +198,13 @@ overflow-y: auto;
 }
 
 
-.confirmar-pd{
+.cancelar-pd{
   background-color: red;
   color: white;
   border: 1px solid red;
   border-radius: 5px;
 }
-.confirmar-pd:hover{
+.cancelar-pd:hover{
   background-color: darkred;
   color: white;
   border: 1px: solid white;
