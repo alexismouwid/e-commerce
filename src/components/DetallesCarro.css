@@ -137,6 +137,34 @@ overflow-y: auto;
     color:  white;
   }
 
+
+.confirmar-pedido{
+  background-color: white;
+  color: black;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.confirmar-pedido:hover{
+  background-color: green;
+  color: white;
+  border: 1px: solid white;
+  border-radius: 5px;
+}
+
+
+.confirmar-pedido{
+  background-color: white;
+  color: black;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.confirmar-pedido:hover{
+  background-color: red;
+  color: white;
+  border: 1px: solid white;
+  border-radius: 5px;
+}
+
 /* 📱🔹 Móviles grandes */
 @media (max-width: 768px){
 
@@ -146,6 +174,9 @@ overflow-y: auto;
     height: 300px;
     overflow-Y:  auto;
   }
+
+
+
 
 
 
