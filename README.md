@@ -17,7 +17,7 @@
 - 🔄 **Cors**: Habilita la comunicación entre el frontend y backend.  
 
 ### 🔹 **Frontend**  
-- ⚛️ **React**: Construcción de la interfaz de usuario de manera dinámica.  
+- ⚛️ **React**: Construcción de la interfaz de usuario de manera dinámica.
 - 🔗 **Axios**: Manejo de las solicitudes HTTP entre frontend y backend.  
 
 ---
