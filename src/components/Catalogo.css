@@ -1,0 +1,142 @@
+/* Estilos base */
+.catalogs-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+
+.section-subtitle {
+  text-align: center;
+  color: #636e72;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.product-card {
+  position: relative;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.product-button {
+  background: rgba(255,255,255,0.9);
+  color: #2d3436;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.product-button:hover {
+  background: white;
+  transform: translateX(5px);
+}
+
+.product-button span {
+  transition: transform 0.3s ease;
+}
+
+.product-button:hover span {
+  transform: translateX(3px);
+}
+
+/* Fondos específicos para cada tarjeta */
+.fruit-card {
+  background: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+}
+
+.vegetable-card {
+  background: url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+}
+
+.dairy-card {
+  background: url('https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .product-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalogs-container {
+    position: relative;
+    right: 7px;
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+  .product-button{
+    position: relative;
+    left: 3.5rem;
+  }
+}

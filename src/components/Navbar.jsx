@@ -86,8 +86,9 @@ const cerrarListaPedidos = () => {
           {/* Botón Hamburguesa solo si es móvil */}
           {isMobile && (
             <button className="menu-icon" onClick={toggleMenu}>
-              ☰
+               ☰
             </button>
+
           )}
 
           {/* Enlaces de navegación */}

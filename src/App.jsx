@@ -6,6 +6,7 @@ import Title from "./components/Title";
 import Navbar from "./components/Navbar";
 import VerProductos from "./components/VerProductos";
 import Footer from "./components/Footer";
+import Catalogo from "./components/Catalogo";
 import "./App.css";
 
 
@@ -73,6 +74,8 @@ frutas: [
       { name: "Curuba", price: 1375, img: "/frutas/curuba.jpg" },
 
     ],
+
+    
     carro: [],
     esCarroVisible: false,
     usuario: JSON.parse(localStorage.getItem("usuario")) || null,
@@ -214,24 +217,16 @@ this.verificarSesion();
 
                     </div>
 
+        <Catalogo 
+        toggleVegetales={this.toggleVegetales}
+        toggleFrutas={this.toggleFrutas}
+        refProductos={this.productosRef}
 
 
-        {/* 🔹 Referencia a la sección de productos */}
-        <div className='layout-btns'> 
-
-          <div ref={this.productosRef} className='content-btns'> 
+        />
 
 
-          <h1 className='titulo-productos'> ¿Que productos desea ver? </h1>
-<button className='btn-vegetales' onClick={this.toggleVegetales}> Vegetales </button> 
-<button className='btn-frutas' onClick={this.toggleFrutas}> Frutas </button> 
-          </div>
-
-
-
-
-          </div>
-               
+     
 
         {mostrarVegetales && (
  <div ref={this.vegetalesRef}>
