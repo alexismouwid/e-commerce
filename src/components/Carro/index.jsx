@@ -1,6 +1,6 @@
 import { Component } from "react";
-import BubbleAlert from "./BubbleAlert";
-import DetallesCarro from "./DetallesCarro";
+import BubbleAlert from "../BubbleAlert";
+import DetallesCarro from "../DetallesCarro";
 import "./Carro.css"; // Archivo CSS para los estilos del menú lateral
 
 const styles = {

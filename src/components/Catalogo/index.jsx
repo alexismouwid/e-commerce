@@ -1,7 +1,7 @@
 import React from 'react';
 import './Catalogo.css';
 
-const Catalogo = ({ toggleVegetales, toggleFrutas, refProductos, refFrutas, refVegetales}) => {
+const Catalogo = ({ toggleVegetales, toggleFrutas, toggleLacteos, refProductos }) => {
   return (
     <div ref={refProductos} className="catalogs-container">
     
@@ -35,7 +35,7 @@ const Catalogo = ({ toggleVegetales, toggleFrutas, refProductos, refFrutas, refV
           <div className="card-content">
             <h3>Lácteos y Huevos</h3>
             <p>Frescura garantizada</p>
-            <button className="product-button">
+            <button onClick={toggleLacteos} className="product-button">
               Ver Lácteos y Huevos<span>→</span>
             </button>
           </div>

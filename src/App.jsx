@@ -1,6 +1,7 @@
 import { Component, createRef } from "react";
 import Productos from "./components/Productos";
 import Frutas from './components/Frutas'
+import Lacteos from './components/Lacteos'
 import Layout from "./components/Layout";
 import Title from "./components/Title";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,8 @@ class App extends Component {
     this.carroRef = createRef();
     this.vegetalesRef = createRef();
     this.frutasRef = createRef();
+    this.lacteosRef = createRef();
+    
   }
 
   state = {
@@ -74,6 +77,17 @@ frutas: [
       { name: "Curuba", price: 1375, img: "/frutas/curuba.jpg" },
 
     ],
+    lacteos: [
+      { name: "Leche", price: 900, img: "/lacteos/leche.jpg" },
+      { name: "Yogurt", price: 800, img: "/lacteos/yogurt.jpg" },
+      { name: "Queso", price: 1000, img: "/lacteos/queso.jpg" },
+      { name: "Queso Crema", price: 1500, img: "/lacteos/queso-crema.jpg" },
+      { name: "Queso Cheddar", price: 2100, img: "/lacteos/queso-cheddar.jpg" },
+      { name: "Queso Parmesano", price: 1350, img: "/lacteos/queso-parmesano.jpg" },
+    
+      { name: "Queso Blanco", price: 1900, img: "/lacteos/queso-blanco.jpg" },
+      { name: "Huevos Criollos", price: 2250, img: "/lacteos/huevos.jpg" },
+     ],
 
     
     carro: [],
@@ -82,6 +96,7 @@ frutas: [
     usuarioAutenticado: !!localStorage.getItem("token"),
     mostrarVegetales: false,
     mostrarFrutas: false,
+    mostrarLacteos: false,
   };
 
 vaciarCarro = () => {
@@ -94,6 +109,7 @@ vaciarCarro = () => {
     return {
       mostrarVegetales: nuevoEstado,
       mostrarFrutas: false,
+      mostrarLacteos: false,
     };
   }, () => {
     if (this.vegetalesRef.current && this.state.mostrarVegetales) {
@@ -108,6 +124,7 @@ vaciarCarro = () => {
       return {
         mostrarFrutas: nuevoEstado,
         mostrarVegetales: false,
+        mostrarLacteos: false,
       };
     }, () => {
       if (this.frutasRef.current && this.state.mostrarFrutas) {
@@ -116,6 +133,20 @@ vaciarCarro = () => {
     });
    };
 
+toggleLacteos = () => {
+    this.setState((prevState) => {
+      const nuevoEstado = !prevState.mostrarLacteos;
+      return {
+        mostrarLacteos: nuevoEstado,
+        mostrarVegetales: false,
+        mostrarFrutas: false,
+      };
+    }, () => {
+      if (this.lacteosRef.current && this.state.mostrarLacteos) {
+        this.lacteosRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+   };
 
 
   agregarAlCarro = (producto) => {
@@ -187,7 +218,7 @@ this.verificarSesion();
   }
 
   render() {
-    const { carro, esCarroVisible, usuario , usuarioAutenticado, mostrarVegetales, mostrarFrutas} = this.state;
+    const { carro, esCarroVisible, usuario , usuarioAutenticado, mostrarVegetales, mostrarFrutas, mostrarLacteos} = this.state;
     const nombre = JSON.parse(localStorage.getItem("usuario")) || {
       nombre: "Invitado",
     };
@@ -220,7 +251,9 @@ this.verificarSesion();
         <Catalogo 
         toggleVegetales={this.toggleVegetales}
         toggleFrutas={this.toggleFrutas}
-        refProductos={this.productosRef}
+        toggleLacteos={this.toggleLacteos}
+          refProductos={this.productosRef}
+       
 
 
         />
@@ -256,6 +289,21 @@ this.verificarSesion();
 
 
         )}
+
+  {mostrarLacteos && (
+ <div ref={this.lacteosRef}>
+          <Layout>
+            <Lacteos
+              agregarAlCarro={this.agregarAlCarro}
+              lacteos={this.state.lacteos}
+            />
+            <button className='ir-carro' onClick={this.scrollToCar}> Ir al pagar </button>
+          </Layout>
+        </div>
+
+          
+        )}
+        
                <Footer />
       </div>
     );

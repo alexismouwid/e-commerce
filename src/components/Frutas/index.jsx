@@ -1,5 +1,5 @@
 import { Component, createRef } from "react";
-import Fruta from "./Fruta.jsx";
+import Fruta from "../Fruta";
 import "./Frutas.css";
 
 

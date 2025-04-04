@@ -1,5 +1,5 @@
 import { Component, createRef } from "react";
-import Producto from "./Producto.jsx";
+import Producto from "../Producto";
 import "./Productos.css";
 
 const styles = {};

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import Logo from "./Logo";
+import Logo from "../Logo";
 import "./Navbar.css";
-import Carro from "./Carro";
-import FormularioLogin from "./FormularioLogin";
-import FormularioRegistro from "./FormularioRegistro";
-import ListaPedidos from "./ListaPedidos";
+import Carro from "../Carro";
+import FormularioLogin from "../FormularioLogin";
+import FormularioRegistro from "../FormularioRegistro";
+import ListaPedidos from "../ListaPedidos";
 import axios from "axios";
 
 
