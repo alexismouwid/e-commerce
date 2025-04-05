@@ -37,6 +37,10 @@
 👉 [**Desploy**](https://e-commerce-two-topaz-93.vercel.app/) 🚀
 ---
 
+## 🎥 Demo mobile del proyecto
+
+[![Demo del proyecto - Tienda de Frutas y Verduras](https://img.youtube.com/vi/GUo8n9pYekc/maxresdefault.jpg)](https://www.youtube.com/shorts/GUo8n9pYekc)
+
 ## 💻 Screenshots  
 
 ### 👌 Inicio de página  
