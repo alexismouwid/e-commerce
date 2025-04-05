@@ -46,19 +46,6 @@
 ### 👌 Inicio de página  
 ![Start](/public/screen.jpg)  
 
-### 📝 Registro de usuario  
-![Registro](/public/registro.jpg)  
-
-### 🔑 Login de usuario  
-![Login](/public/loginuser.jpg)  
-
-### ✅ Usuario autenticado  
-![Autenticado](/public/loginautenticado.jpg)  
-
-### 🛍️ Carrito de compras / Final de página  
-![Carro](/public/screen4.jpg)  
-
----
 
 ## 🔓 Estado del Proyecto  
 **⏳ NO TERMINADO** ☕  
