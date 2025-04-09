@@ -79,11 +79,7 @@ const cerrarListaPedidos = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="logo">
-            <Logo/>
-          </div>
-
-          {/* Botón Hamburguesa solo si es móvil */}
+ {/* Botón Hamburguesa solo si es móvil */}
           {isMobile && (
             <button className="menu-icon" onClick={toggleMenu}>
                ☰
@@ -91,6 +87,11 @@ const cerrarListaPedidos = () => {
 
           )}
 
+          <div className="logo">
+            <Logo/>
+          </div>
+
+         
           {/* Enlaces de navegación */}
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
             {usuarioAutenticado ? ( 
